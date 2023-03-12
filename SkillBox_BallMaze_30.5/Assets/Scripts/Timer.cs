@@ -9,14 +9,15 @@ public class Timer : MonoBehaviour
     [SerializeField] private float _time;
     [SerializeField] private TextMeshProUGUI _timerText;
 
-    private float _timeLeft = 0f;
+    public static float timeLeft = 0f;
     public static bool timeOn = false;
 
     private void Start()
     {
         instance = this;
 
-        _timeLeft = _time;
+        timeLeft = _time;
+        UpdateTimeeText();
         timeOn = false;
     }
 
@@ -24,20 +25,28 @@ public class Timer : MonoBehaviour
     {
         if (timeOn)
         {
-            _timeLeft += Time.deltaTime;
-            UpdateTimeeText();
+            if(timeLeft > 0)
+            {
+                timeLeft -= Time.deltaTime;
+                UpdateTimeeText();
+            }
+            else
+            {
+                timeLeft = _time;
+                timeOn = false;
+            }
         }
     }
 
     private void UpdateTimeeText()
     {
-        if(_timeLeft < 0)
+        if(timeLeft < 0)
         {
-            _timeLeft = 0;
+            timeLeft = 0;
         }
 
-        float minutes = Mathf.FloorToInt(_timeLeft / 60);
-        float seconds = Mathf.FloorToInt(_timeLeft % 60);
+        float minutes = Mathf.FloorToInt(timeLeft / 60);
+        float seconds = Mathf.FloorToInt(timeLeft % 60);
         _timerText.text = string.Format("{0:00} : {1:00}", minutes, seconds);
     }
 }

@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!95 &191170947 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1376153587268070637, guid: feda0f986247fe942baa7446a994dfba, type: 3}
+  m_PrefabInstance: {fileID: 1376153587144140142}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &221272381
 GameObject:
   m_ObjectHideFlags: 0
@@ -672,6 +677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7756114e50020214eb5c318f58727a35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CircleAnimation: {fileID: 191170947}
 --- !u!1 &751814866
 GameObject:
   m_ObjectHideFlags: 0
@@ -1285,3 +1291,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2120005756}
   m_CullTransparentMesh: 1
+--- !u!1001 &1376153587144140142
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1376153587268070636, guid: feda0f986247fe942baa7446a994dfba, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1376153587268070636, guid: feda0f986247fe942baa7446a994dfba, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 1376153587268070636, guid: feda0f986247fe942baa7446a994dfba, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1376153587268070636, guid: feda0f986247fe942baa7446a994dfba, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1376153587268070636, guid: feda0f986247fe942baa7446a994dfba, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1376153587268070636, guid: feda0f986247fe942baa7446a994dfba, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1376153587268070636, guid: feda0f986247fe942baa7446a994dfba, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1376153587268070636, guid: feda0f986247fe942baa7446a994dfba, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1376153587268070636, guid: feda0f986247fe942baa7446a994dfba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1376153587268070636, guid: feda0f986247fe942baa7446a994dfba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1376153587268070636, guid: feda0f986247fe942baa7446a994dfba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1376153587268070638, guid: feda0f986247fe942baa7446a994dfba, type: 3}
+      propertyPath: m_Name
+      value: "\u0421ircle"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: feda0f986247fe942baa7446a994dfba, type: 3}
